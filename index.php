@@ -13,7 +13,7 @@ index.php
         exit();
     }
 
-    lp,
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
