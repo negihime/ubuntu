@@ -1,4 +1,4 @@
-index.php
+insert.php
 <?php
     $dsn = 'mysql:dbname=test_DB;host=localhost;';
     $user = 'ishikawa';
