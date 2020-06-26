@@ -2,7 +2,7 @@ insert.php
 <?php
     $dsn = 'mysql:dbname=test_DB;host=localhost;';
     $user = 'ishikawa';
-    $password = 'Morijyobi';
+    $password = 'morijyobi';
     try {
         $dbh = new PDO($dsn, $user, $password);
 
