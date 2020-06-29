@@ -1,6 +1,6 @@
 index.php
 <?php
-$dbn = 'mysql:dbname=test_DB;host=localhost;';
+$dsn = 'mysql:dbname=test_DB;host=localhost;';
 $user = 'ishikawa';
 $password = 'morijyobi';
 try {
