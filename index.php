@@ -1,20 +1,20 @@
 index.php
 <?php
-    $dsn = 'mysql:dbname=test_DB;host=localhost;';
-    $user = 'ishikawa';
-    $password = 'morijyobi';
-    try {
-        $dbh = new PDO($dsn, $user, $password);
+$dsn = 'mysql:dbname=test_DB;host=localhost;';
+$user = 'ishikawa';
+$password = 'morijyobi';
+try {
+	$dbh = new PDO($dsn, $user, $password);
 
-        $sql = "select * from sample;";
-        $result = $dbh->query($sql);
-    } catch (PDOException $e) {
-        print "Failed: " . $e->getMessage() . "\n";
-        exit();
-    }
+	$sql = "select * from user;";
+	$result = $dbh->query($sql);
+} catch (PDOException $e) {
+	print "Failed: " . $e->getMessage() . "\n";
+	exit();
+}
 
-    
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -85,7 +85,7 @@ index.php
 				</table>
 			</div>
 			<div class="tab-pane" id="insert">
-				<form action="./insert.php" method="POST">
+				<form class="mt-3" action="./insert.php" method="POST">
 					<div class="form-group row">
 						<label for="id" class="col-sm-2 col-form-label">ID</label>
 						<div class="col-sm-10">
